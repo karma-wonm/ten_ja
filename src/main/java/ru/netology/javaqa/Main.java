@@ -13,8 +13,8 @@ public class Main {
         int mediumSaleMonth = service.medium(month);
         int maxSaleMonth = service.max(month);
         int minSaleMonth = service.min(month);
-        int underMediumSaleMonth = service.underMedium(month, mediumSaleMonth);
-        int overMediumSaleMonth = service.overMedium(month, mediumSaleMonth);
+        int underMediumSaleMonth = service.underMedium(month);
+        int overMediumSaleMonth = service.overMedium(month);
         System.out.println("Сумма всех продаж " + sumSaleMonth);
         System.out.println("Средняя сумма продаж в месяц " + mediumSaleMonth);
         System.out.println("Месяц, в котором были максимальные продажи " + maxSaleMonth);

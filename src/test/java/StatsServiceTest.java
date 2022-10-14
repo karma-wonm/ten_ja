@@ -56,9 +56,8 @@ public class StatsServiceTest {
         int[] month = {
                 10, 19, 15, 10, 13, 17
         };
-        int medium = service.medium(month);
-        int actual = 3;
-        int expected = service.underMedium(month, medium);
+                int actual = 3;
+        int expected = service.underMedium(month);
         assertEquals(expected, actual);
     }
 
@@ -68,9 +67,8 @@ public class StatsServiceTest {
         int[] month = {
                 10, 19, 15, 10, 13, 17
         };
-        int medium = service.medium(month);
         int actual = 3;
-        int expected = service.overMedium(month, medium);
+        int expected = service.overMedium(month);
         assertEquals(expected, actual);
     }
 }

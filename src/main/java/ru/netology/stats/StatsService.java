@@ -50,8 +50,10 @@ public class StatsService {
         return numberMonthMin;
     }
 
-    public int underMedium(int month[], int medium) {
+    public int underMedium(int[] month) {
         int quantityMonthUnderMedium = 0;
+        StatsService service = new StatsService();
+        int medium = service.medium(month);
         for (int i = 0; i < month.length; i++) {
             if (month[i] < medium) {
                 quantityMonthUnderMedium++;
@@ -63,8 +65,10 @@ public class StatsService {
         return quantityMonthUnderMedium;
     }
 
-    public int overMedium(int month[], int medium) {
+    public int overMedium(int[] month) {
         int quantityMonthOverMedium = 0;
+        StatsService service = new StatsService();
+        int medium = service.medium(month);
         for (int i = 0; i < month.length; i++) {
             if (month[i] > medium) {
                 quantityMonthOverMedium++;
